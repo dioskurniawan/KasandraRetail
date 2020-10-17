@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/feedImage1"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@mipmap/store"
+            android:contentDescription="@string/app_name" />
+ 
+    </LinearLayout>
+ 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:paddingTop="15dp"
+        android:typeface="sans" 
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginStart="-50dp"
+        android:paddingTop="7dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:gravity="end|top"
+        android:layout_gravity="end|bottom"
+        fancy:fb_borderColor="@color/light_grey"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/lightgreen1"
+        fancy:fb_focusColor="@color/transparent"
+        fancy:fb_fontIconResource="&#xf101;"
+        fancy:fb_fontIconSize="20dp"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text=""
+        fancy:fb_textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:paddingTop="45dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="14sp" />
+    <!--<TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:textSize="14dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/expdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:gravity="left"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="10dip"
+        android:textColor="@color/bg_login"
+        android:textStyle="bold"/>
+ 
+      Rightend Arrow -->
+     <!--<ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>-->
+ 
+</RelativeLayout>

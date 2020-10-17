@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.kasandra.retail.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_layout">
+            <TextView android:id="@+id/txtcustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="-2dp"
+                android:background="@android:color/black"/>
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/fab_link_cust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_horizontal|center_vertical"
+                fancy:fb_borderColor="@color/lightgreen1"
+                fancy:fb_borderWidth="0dp"
+                fancy:fb_defaultColor="@color/transparent"
+                fancy:fb_focusColor="@color/transparent"
+                fancy:fb_fontIconResource="&#xf196;"
+                fancy:fb_fontIconSize="30dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="@color/colorPrimaryDark" />
+
+            <ListView
+                android:id="@+id/listCustomer"
+                android:stackFromBottom="false"
+                android:layout_width="98dp"
+                android:choiceMode="singleChoice"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="65dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView android:id="@+id/txtcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5.5dp"
+                android:background="@android:color/black"/>
+            <ListView
+                android:id="@+id/listCategory"
+                android:stackFromBottom="false"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="65dp"/>
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/emptycat"
+                android:textColor="@color/red"
+                android:gravity="center_vertical|center_horizontal" />
+            <!--<mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/fab_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_horizontal|center_vertical"
+                fancy:fb_borderColor="@color/light_grey"
+                fancy:fb_borderWidth="0dp"
+                fancy:fb_defaultColor="@color/lightgreen2"
+                fancy:fb_focusColor="@color/transparent"
+                fancy:fb_fontIconResource="&#xf07c;"
+                fancy:fb_fontIconSize="30dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="@color/colorPrimaryDark" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp">
+                    <EditText
+                        android:id="@+id/txtSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:singleLine="true"
+                        android:hint="Ketik SKU/PLU atau Nama Produk"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/cleartext"
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="x"
+                        android:textSize="15sp"
+                        android:textColor="@color/half_black"
+                        android:background="@color/transparent"/>
+
+                </FrameLayout>
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="start|bottom"
+                    android:layout_gravity="right|end|center_vertical"
+                    fancy:fb_borderColor="@color/light_grey"
+                    fancy:fb_borderWidth="0dp"
+                    fancy:fb_defaultColor="@color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_fontIconResource="&#xf002;"
+                    fancy:fb_fontIconSize="20dp"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text=""
+                    fancy:fb_textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/midScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_layout">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:id="@+id/grid_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:columnCount="3"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="65dp">
+                        <!--android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:rowCount="3"-->
+
+                        <!--<Button
+                            android:id="@+id/img1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/burger"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"/>-->
+                    </GridLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_layout">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+            <TableLayout
+                android:id="@+id/tableLaporan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@color/lightgreen1"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+            </TableLayout>
+
+            <!--</LinearLayout>-->
+
+            <ScrollView
+                android:id="@+id/scrollOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="298dp">
+
+                <TableLayout
+                    android:id="@+id/tableLaporan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="1dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/layout_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginTop="-298dp"
+                android:background="@drawable/border_layout">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgreen2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@+id/subtotal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text="Subtotal"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/subtotal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-210dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text=": Rp 0"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@+id/disc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text="Diskon Total "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/disc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-210dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text=": Rp 0"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView
+                        android:id="@+id/tax1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text="Pajak + S.Charge"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tax2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-210dp"
+                        android:padding="8dip"
+                        android:textSize="18sp"
+                        android:text=": Rp 0"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <TextView
+                        android:id="@+id/total1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:padding="8dip"
+                        android:textSize="22sp"
+                        android:text="Total "
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/total2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-210dp"
+                        android:padding="8dip"
+                        android:textSize="22sp"
+                        android:text=": Rp 0"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/lightgreen1"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:weightSum="1.0">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_print"
+                        android:layout_height="80dp"
+                        android:layout_weight=".77"
+                        android:layout_width="0dip"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        fancy:fb_borderColor="@color/light_grey"
+                        fancy:fb_borderWidth="0dp"
+                        fancy:fb_defaultColor="@color/colorPrimaryDark"
+                        fancy:fb_focusColor="@color/transparent"
+                        fancy:fb_fontIconResource="&#xf02f;"
+                        fancy:fb_fontIconSize="27dp"
+                        fancy:fb_iconPosition="left"
+                        fancy:fb_radius="30dp"
+                        fancy:fb_text="@string/btn_print"
+                        fancy:fb_textColor="@color/white" />
+
+                    <!--<mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_simpan"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        fancy:fb_borderColor="@color/light_grey"
+                        fancy:fb_borderWidth="0dp"
+                        fancy:fb_defaultColor="@color/darkgreen"
+                        fancy:fb_focusColor="@color/transparent"
+                        fancy:fb_fontIconResource="&#xf1d9;"
+                        fancy:fb_fontIconSize="27dp"
+                        fancy:fb_iconPosition="left"
+                        fancy:fb_radius="30dp"
+                        fancy:fb_text="@string/btn_save"
+                        fancy:fb_textColor="@color/white" />-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<android.support.v4.app.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center|bottom"
+    android:layout_marginBottom="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|bottom">
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>-->
+</RelativeLayout>

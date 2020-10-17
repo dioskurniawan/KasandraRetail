@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="id.kasandra.retail.MainActivity">
+    <item
+        android:id="@+id/action_user"
+        android:icon="@mipmap/user"
+        app:showAsAction="always"
+        android:title="User"/>
+    <item
+        android:id="@+id/action_client"
+        android:icon="@mipmap/domain"
+        app:showAsAction="always"
+        android:title="Client"/>
+    <item
+        android:id="@+id/action_outlet"
+        android:icon="@mipmap/store"
+        app:showAsAction="always"
+        android:title="Outlet"/>
+</menu>

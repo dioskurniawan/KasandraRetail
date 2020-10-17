@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout">
+
+            <GridLayout
+                android:id="@+id/grid_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:columnCount="2">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_1000" />
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_2000" />
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_5000" />
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_10000" />
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_20000" />
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_50000" />
+                <ImageView
+                    android:id="@+id/iv7"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_100000" />
+                <ImageView
+                    android:id="@+id/iv8"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/uang_reset" />
+
+            </GridLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/relativelayout"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/bayar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="8dip"
+            android:textSize="18sp"
+            android:text="Jumlah Dibayar"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/bayar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-160dp"
+            android:padding="8dip"
+            android:textSize="18sp"
+            android:text=": Rp 0"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/total1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="8dip"
+            android:textSize="18sp"
+            android:text="Total Pembelian "
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/total2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-160dp"
+            android:padding="8dip"
+            android:textSize="18sp"
+            android:text=": Rp 0"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/kembali1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="8dip"
+            android:textSize="22sp"
+            android:text="Kembali "
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/kembali2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-160dp"
+            android:padding="8dip"
+            android:textSize="22sp"
+            android:text=": Rp 0"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

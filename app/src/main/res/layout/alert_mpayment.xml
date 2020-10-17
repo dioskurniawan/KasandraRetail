@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout">
+
+            <GridLayout
+                android:id="@+id/grid_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:columnCount="3">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="250dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/gopay" />
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="250dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ovo" />
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="250dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/tcash" />
+
+            </GridLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/relativelayout"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/cc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="8dip"
+            android:textSize="22sp"
+            android:text="Tipe Mobile Payment "
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/cc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-180dp"
+            android:padding="8dip"
+            android:textSize="22sp"
+            android:text=": Go-Pay"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

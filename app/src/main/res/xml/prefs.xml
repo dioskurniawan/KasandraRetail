@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <de.j4velin.wifiAutoOff.StatusPreference
+     android:key="status"/>
+ <PreferenceCategory
+   android:summary="User Preferences"
+   android:title="Settings" >
+
+  <!--<CheckBoxPreference
+      android:key="online"
+      android:title="Online Recording"
+      android:summary="Allows tracks to be sent over wireless network" />
+
+  <ListPreference
+      android:key="interval"
+      android:entries="@array/intervalOptions"
+      android:entryValues="@array/intervalValues"
+      android:title="Tracking Interval"
+      android:summary="Delay (in seconds) between recording"/>
+
+  <ListPreference
+      android:key="speedmin"
+      android:entries="@array/speedOptions"
+      android:entryValues="@array/speedValues"
+      android:title="Minimum Speed"
+      android:summary="Device will be considered not moving if the speed falls below this minimum number" />
+
+  <ListPreference
+      android:key="stoptime"
+      android:entries="@array/stopOptions"
+      android:entryValues="@array/stopValues"
+      android:title="Stop Time Treshold"
+      android:summary="Delay (in minutes) before device is considered not moving" />
+
+  <CheckBoxPreference
+      android:key="screen"
+      android:title="Dim Screen when Not moving"
+      android:summary="Lower screen brightness when device is not moving" />-->
+
+  <ListPreference
+     android:key="wifi"
+     android:entries="@array/WiFiOptions"
+     android:entryValues="@array/WiFiValues"
+     android:title="Connect WiFi Automatically"
+     android:summary="Automatically connect to WiFi"/>
+
+  <!--<ListPreference
+     android:key="lang"
+     android:entries="@array/langOptions"
+     android:entryValues="@array/langValues"
+     android:title="Language"
+     android:summary="Display language"/>
+
+   <ListPreference
+     android:key="data"
+     android:entries="@array/dataOptions"
+     android:entryValues="@array/dataValues"
+     android:title="Local Data Retention"
+     android:summary="Days before local data is cleared"/>-->
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

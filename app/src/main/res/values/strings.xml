@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Kasandra</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+        <string name="action_sync">Sinkronisasi Produk</string>
+        <string name="btn_cancel">Batal</string>
+        <string name="btn_save">Simpan</string>
+    <string name="btn_print">Cetak</string>
+    <string name="btn_print_rpt">Cetak Laporan</string>
+    <string name="trans_date">Tanggal Transaksi</string>
+    <string name="trans_prod">Produk</string>
+    <string name="trans_total">Nilai Transaksi</string>
+    <string name="trans_payment">Metode Pembayaran</string>
+    <string name="emptylist">Belum ada produk / kategori</string>
+    <string name="emptycat">Belum ada kategori produk untuk Usaha Anda, silakan masuk ke https://kasandra.biz untuk menambahkan kategori produk</string>
+    <string name="txt_product">Produk</string>
+    <string name="txt_category">Kategori Produk : </string>
+    <string name="txt_category1">Pilih Kategori Produk</string>
+
+    <string name="txt_cat_name">Kategori</string>
+    <string name="txt_prod_name">Nama Produk</string>
+    <string name="txt_prod_code">Kode Produk</string>
+    <string name="txt_price_buy">Harga Beli</string>
+    <string name="txt_price_sell">Harga Jual</string>
+
+    <string name="no_internet1">Gagal menyimpan data ke server. Silakan periksa koneksi internet Anda</string>
+    <string name="no_internet2">Silakan periksa kembali koneksi internet Anda. Kasandra saat ini dalam mode offline</string>
+    <string name="no_internet3">Data transaksi tidak ditemukan, diperlukan koneksi internet untuk mencari data dari server</string>
+    <string name="screensize">Mohon maaf, perangkat Anda tidak mendukung untuk menjalankan aplikasi ini.\nKasandra Retail dapat dijalankan di tablet Android jenis apa saja, dengan ukuran layar yang disarankan adalah 8 inci ke atas</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_captcha">Captcha</string>
+    <string name="hint_client">Nama Usaha</string>
+    <string name="hint_outlet">Nama Outlet</string>
+    <string name="hint_addr">Alamat</string>
+    <string name="hint_city">Kota</string>
+    <string name="labelloginuser">Langkah 1/3 : Akun Pengguna</string>
+    <!--<string name="labelregisteruser">Pendaftaran Pengguna Baru</string>
+    <string name="labelregclient">Masuk ke Akun Usaha</string>-->
+    <string name="labelregisteruser">Langkah 1/3 : Akun Pengguna</string>
+    <string name="labelregclient">Langkah 2/3 : Akun Usaha</string>
+    <string name="labelregoutlet">Langkah 3/3 : Pembuatan Outlet Pertama</string>
+    <string name="btn_link_to_register">Belum punya akun ? Buat akun sekarang</string>
+    <string name="btn_sign_in">Masuk</string>
+    <string name="btn_sign_up">Daftar</string>
+    <string name="btn_reload">Reload</string>
+    <string name="btn_sign_check">Validasi</string>
+    <string name="btn_sign_confirm">Konfirmasi</string>
+    <string name="btn_link_cancel">Batal</string>
+    <string name="btn_link_to_signin">Sudah punya akun ? Masuk disini</string>
+    <string name="signin_text">Masuk menggunakan Google account</string>
+    <string name="text_captcha">Silakan ketik ulang huruf dan angka yang nampak:</string>
+    <string name="loading">Loading…</string>
+    <string name="err_msg_email">Masukkan alamat email</string>
+    <string name="err_msg_password">Masukkan kata sandi</string>
+    <string name="err_msg_not_empty">Kolom ini harus diisi</string>
+    <string name="err_msg_client">Masukkan Nama Usaha Anda</string>
+    <string name="err_msg_outlet">Masukkan Nama Outlet Pertama Anda</string>
+    <string name="err_msg_addr">Masukkan Alamat Outlet Anda</string>
+    <string name="err_msg_city">Masukkan Kota Outlet Anda</string>
+    <string name="err_msg_name">Masukkan nama lengkap pengguna</string>
+    <string name="err_msg_captcha">Masukkan captcha</string>
+    <string name="register_text">Daftar menggunakan Google account</string>
+    <!--<string name="registerclient">Apabila Anda adalah pemilik Usaha, maka Anda harus mendaftarkan akun Usaha Anda dan membuat password khusus.\nApabila Anda bukan pemilik Usaha, silakan masukkan ID Usaha dan password sesuai yang diberikan oleh admin Usaha.</string>-->
+    <string name="registerclient">Setiap pengguna harus tergabung dalam suatu akun Usaha. Satu akun Usaha bisa memiliki banyak pengguna. Silakan masukkan akun Usaha yang sudah ada dengan memasukkan ID Usaha beserta passwordnya di bawah ini.</string>
+    <string name="registerclient2">\nBila akun Usaha belum dimiliki, silakan membuat akun Usaha baru, otomatis Anda akan menjadi Pemilik akun Usaha baru ini.</string>
+    <string name="registeroutlet">Silakan mendaftarkan outlet usaha Anda untuk akun Usaha yang baru Anda buat. Setiap akun Usaha harus memiliki setidaknya satu outlet.</string>
+    <string name="labelsyarat_ketentuan">Syarat &amp; Ketentuan</string>
+    <string name="labeldisclaimer">Dengan mempergunakan layanan Kasandra, Anda dianggap telah memahami dan menyetujui seluruh syarat &amp; ketentuan yang tertera di bawah ini:\n\n1. Layanan Kasandra adalah layanan yang disediakan oleh PT Intelligence Dynamics.\n\n2. Layanan Kasandra disediakan kepada Anda secara bebas biaya dalam kondisi “apa adanya”. Segala akibat yang disebabkan dari penggunaan layanan ini bukan tanggung jawab PT Intelligence Dynamics.\n\n3. Seluruh hak cipta yang terkait dengan layanan Kasandra adalah milik PT Intelligence Dynamics. Anda tidak diperkenankan menyalin, mengubah, menghilangkan isi, tampilan, logo dan gambar untuk keperluan komersial maupun non-komersial tanpa ijin tertulis dari PT Intelligence Dynamics\n\n4. Anda mempercayakan data yang Anda masukkan dalam layanan ini kepada PT Intelligence Dynamics. Keamanan data pribadi Anda dijamin oleh PT Intelligence Dynamics dan tidak akan diserahkan kepada pihak lain manapun.\n\n5. Beberapa konten yang disajikan dalam layanan Kasandra bisa berasal dari pihak lain, termasuk iklan dan konten komersial lainnya. Hak cipta dari konten yang berasal dari luar tetap menjadi milik pemegang hak cipta masing-masing.</string>
+    <string name="btn_link_to_privacy">Read our Privacy Policy</string>
+    <string name="termcondition">Saya memahami peraturan yang berlaku</string>
+    <string name="btn_sign_continue">Lanjutkan</string>
+    <string name="hint_input_date"> </string>
+    <string name="txt_date1">Tanggal Mulai</string>
+    <string name="txt_date2">Tanggal Akhir</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+
+    <string name="no_connected">WiFi disconnected</string>
+    <string name="click_to_select_network">Click to select WiFi network</string>
+    <string name="wifi_not_enabled">WiFi disabled</string>
+    <string name="click_to_turn_on">Click to turn on</string>
+    <string name="settings_not_found_">Settings not found!</string>
+
+    <string name="week">1 Minggu terakhir</string>
+    <string name="everything">100 Transaksi Terakhir</string>
+</resources>

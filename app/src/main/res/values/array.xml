@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WiFiOptions">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="WiFiValues">
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+    <string-array name="voucOptions">
+        <item>Voucher WIBO 30MB</item>
+        <!--<item>Voucher WIBO 65MB</item>-->
+        <item>Voucher WIBO 165MB</item>
+        <item>Voucher WIBO 350MB</item>
+        <item>Voucher WIBO 1GB</item>
+        <item>Voucher WIBO 2GB</item>
+        <!--<item>Voucher WIBO 5GB</item>-->
+        <item>Voucher WIBO 10GB</item>
+        <item>Voucher WIBO 1jam</item>
+        <!--<item>Voucher WIBO 2jam</item>-->
+        <!--<item>Voucher WIBO 3jam</item>-->
+        <!--<item>Voucher WIBO 4jam</item>-->
+    </string-array>
+    <string-array name="voucValues">
+        <item>50</item>
+        <!--<item></item>-->
+        <item>52</item>
+        <item>53</item>
+        <item>55</item>
+        <item>54</item>
+        <!--<item></item>-->
+        <item>56</item>
+        <item>58</item>
+        <!--<item></item>-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    </string-array>
+    <string-array name="printerOpt">
+        <item>32 Karakter</item>
+        <item>42 Karakter</item>
+    </string-array>
+    <string-array name="printerVal">
+        <item>32</item>
+        <item>42</item>
+    </string-array>
+</resources>
